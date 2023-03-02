@@ -1,6 +1,8 @@
-name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
-on: [push]
+name: snk-svg-generator
+run-name: ${{ github.repository_owner }}'s animated contributions
+on: 
+  schedule:
+    -cron: '0 6 * * *'
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
