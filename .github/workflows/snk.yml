@@ -2,7 +2,7 @@ name: snk-svg-generator
 run-name: ${{ github.repository_owner }}'s animated contributions
 on: 
   schedule:
-    -cron: '46 10 * * *'
+    -cron: '0 6 * * *'
 jobs:
   snk-svg:
     runs-on: ubuntu-latest
