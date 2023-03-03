@@ -2,7 +2,7 @@ name: snk-svg-generator
 run-name: ${{ github.repository_owner }}'s animated contributions
 on: 
   schedule:
-    - cron: '35 9 * * *'
+    - cron: '0 */6 * * *'
     
 # This command allows us to run the Action automatically from the Actions tab.
   workflow_dispatch:
