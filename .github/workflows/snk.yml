@@ -2,12 +2,12 @@ name: snk-svg-generator
 run-name: ${{ github.repository_owner }}'s animated contributions
 on: 
   schedule:
-    -cron: '0 1 * * *'
+    - cron: '0 1 * * *'
 jobs:
   snk-svg:
     runs-on: ubuntu-latest
     steps:
-      -uses: Platane/snk/svg-only@v2
+      - uses: Platane/snk/svg-only@v2
         with:
           # github user name to read the contribution graph from (**required**)
           # using action context var `github.repository_owner` or specified user
